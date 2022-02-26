@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>YY Times</title>
+    <style>
+      /* CSS from top to bottom
+      코드의 작성 순서가 구현 순서 */
+
+      div {
+        height: 150px;
+        width: 150px;
+        background-color: rgba(116, 136, 228, 0.76);
+      }
+      /* 
+      any sort of box => "block"
+      div / header / main / section / footer / article
+      do not allow nothing next to them
+      */
+
+      span {
+        background-color: tomato;
+        font-weight: bold;
+      }
+      /*
+      span allows elements to be next to it
+      */
+
+      code {
+        font-style: italic;
+      }
+      header {
+        background-color: pink;
+      }
+      main {
+        background-color: khaki;
+      }
+      footer {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      옆에 다른 요소가 올 수 없는 것 : block / 화면 레이아웃 잡을 때, 전체적인 뼈대를 설계할 때
+                           있는 것 : inline(in the same line) / 아주 작은 글, 링크, 그림 등
+    -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>Hello</span>
+    <span>Hello</span>
+    <span>Hello</span>
+    <a href="#">link</a>
+    <img src="1.gif" height="200px" />
+    <span>Hello</span>
+    <code>Hello</code>
+    <p>Nice to meet you</p>
+    <header>hi</header>
+    <main>hello</main>
+    <footer>안녕</footer>
+  </body>
+</html>
