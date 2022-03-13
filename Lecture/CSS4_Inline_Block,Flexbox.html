@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>CSS4 - Inline Block, Flexbox</title>
+    <style>
+      body {
+        height: 100vh;
+        /*
+        vh : viewpoint height
+        = screen
+        100vh means 100 percent of screen
+        vh는 디스플레이마다 다르다(-그래서 flex와 사용하는 듯..)
+         */
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        /*
+        justify-content : flex요소를 가로선 상에서 정렬 - main axis(주축 - 수평 horizontal)
+        align-items : flex요소를 세로선 상에서 정렬 - cross aixs(교차축 - 수직 vertical)
+        flex-direction : 정렬할 방향을 설정 - 주축과 교차축을 반전(row / column)
+         */
+      }
+      /*
+      flex : 오직 부모에게만 사용 가능(flex container)
+      ex) div에 효과를 주고 싶다 -> div의 부모인 body에 적용 */
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28pt;
+        font-weight: bold;
+        color: whitesmoke;
+        width: 300px;
+        height: 300px;
+        background-color: slategray;
+      }
+      #second {
+        background-color: rgb(99, 161, 151);
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+  </body>
+</html>

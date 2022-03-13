@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>CSS5 - Position</title>
+    <style>
+      body {
+        height: 10000vh;
+        margin: 20px;
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        color: whitesmoke;
+      }
+      #brown {
+        background-color: rosybrown;
+        position: fixed;
+        opacity: 0.2;
+      }
+      #different {
+        background-color: grey;
+        opacity: 0.7;
+        /* 
+        positon:fixed
+        가장 처음에 위치한 레이아웃에서 고정 
+        
+        "레이어를 부수고 다른 레이어에 위치할 것
+        모든 것의 위에 있는 것
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="brown"></div>
+    <div id="different"></div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>CSS6 - Relative Absolute</title>
+    <style>
+      body {
+        height: 10000vh;
+        margin: 50px;
+        /*
+        relative한 부모가 없다면
+        body는 바깥쪽에 있는 가장 relative한 부모가 된다
+        */
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+      }
+      .sky {
+        background-color: rgb(97, 181, 214);
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* 
+        1) position: relative;
+          [처음 생성된 위치]를 기준으로 t-r-b-l로 위치를 조금씩 수정
+        2) position: absolute;
+          [가장 가까운 relative 부모]를 기준으로 이동
+          단, relative한 부모가 없을 경우 body를 기준으로 이동한다.
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div title="To be honest . . . ">
+      <div class="sky" title="Relative and Absolute are most important"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Margin, Border, Padding</title>
+    <style>
+      /* CSS from top to bottom
+      코드의 작성 순서가 구현 순서 */
+      * {
+        border: 2px dashed black;
+      }
+      html {
+        background-color: seagreen;
+      }
+
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: palevioletred;
+      }
+
+      div {
+        padding: 20px;
+        border: 2px solid black;
+      }
+      span {
+        border-style: dotted;
+      }
+      /*
+      any sort of box => "block"
+      div / header / main / section / footer / article
+      do not allow nothing next to them
+      */
+
+      /*
+      inline do not have height and width
+      */
+      #first {
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+      }
+
+      #second {
+        background-color: navy;
+        width: 100px;
+        height: 100px;
+      }
+
+      #third {
+        background-color: purple;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      옆에 다른 요소가 올 수 없는 것 : block / 화면 레이아웃 잡을 때, 전체적인 뼈대를 설계할 때
+                           있는 것 : inline(in the same line) / 아주 작은 글, 링크, 그림 등
+    -->
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <span>hello</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!--
+  margin:box의 border(경계)로부터 바깥에 있는 공간
+  - body는 경게 바깥으로 공간을 가지고 있다
+  border:
+  padding:
+
+-->
