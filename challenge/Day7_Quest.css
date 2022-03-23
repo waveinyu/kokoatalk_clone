@@ -1,0 +1,41 @@
+body {
+  background-color: lightsteelblue;
+  height: 100vh;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.border {
+  border: 3px solid white;
+}
+div:first-child {
+  position: absolute;
+  background-color: tomato;
+  height: 250px;
+  width: 150px;
+  position: absolute;
+}
+div:nth-child(2) {
+  position: absolute;
+  background-color: teal;
+  height: 250px;
+  width: 150px;
+}
+div:nth-child(3) {
+  position: absolute;
+  background-color: burlywood;
+  /* border: 3px solid white; */
+  height: 250px;
+  width: 150px;
+}
+div:nth-child(4) {
+  position: absolute;
+  background-color: thistle;
+  /* border: 3px solid white; */
+  height: 250px;
+  width: 150px;
+}
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+body {
+  background-color: tomato;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+div {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 300px;
+  width: 300px;
+  padding: 15px;
+  background-color: wheat;
+  border: 2px solid black;
+}
+.default {
+  background-color: teal;
+  border: 2px solid whitesmoke;
+  height: 50px;
+  width: 50px;
+}
+#special {
+  border: dotted whitesmoke;
+  width: 230px;
+}

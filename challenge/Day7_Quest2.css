@@ -1,0 +1,66 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  height: 100vh;
+  flex-direction: column; /*세로방향*/
+  align-items: center; /*내용물 가운데 정렬*/
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  height: 300px;
+  width: 180px;
+  border: 4px solid white;
+}
+
+.smallbox {
+  height: 110px;
+  width: 180px;
+  background-color: white;
+}
+
+.rposition {
+  position: relative;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
+
+.top {
+  top: 20px;
+}
+
+body > div > div:last-child {
+  top: 50px;
+}
+
+body > div > div:first-child {
+  top: 20px;
+}
+
+body > div > div:first-child > div:nth-child(1) {
+  background-color: tomato;
+}
+body > div > div:first-child > div:nth-child(2) {
+  background-color: teal;
+}
+body > div > div:last-child > div:nth-child(1) {
+  background-color: burlywood;
+}
+body > div > div:last-child > div:nth-child(2) {
+  background-color: thistle;
+}
